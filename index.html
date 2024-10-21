@@ -1,0 +1,1105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Document Info System</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="./asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="./asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="./asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+   <main class="appWrapper">
+      <!-- sidebar -->
+      <div class="sideBar">
+         <div class="topInfo">
+            <div class="logoBox">
+               <a href="/">
+                  <img class="img-fluid" src="./asset/img/logo.jpg" alt="">
+               </a>
+            </div>
+            <div class="menuBox">
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="#" class="active">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                           </svg>
+                           <span>My Project</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                           </svg>
+                           <span>Project Manager</span>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="bottomInfo">
+            <p>App version 23.5.12</p>
+         </div>
+      </div>
+      <!-- mobile header -->
+      <div class="mobileHeader">
+         <div class="row align-items-center">
+            <div class="col-6">
+               <div class="LogoBox">
+                  <a href="/">
+                     <img class="img-fluid" src="./asset/img/logo.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-6">
+               <div class="toggleButton">
+                  <button type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                           d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- mobileSidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="offcanvasExampleLabel">
+         <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+            <div class="topInfo">
+               <div class="menuBox">
+                  <nav>
+                     <ul>
+                        <li>
+                           <a href="#" class="active">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="size-6">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                              </svg>
+                              <span>My Project</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="size-6">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              <span>Project Manager</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <div class="bottomInfo">
+               <p>App version 23.5.12</p>
+            </div>
+         </div>
+      </div>
+      <!-- main app content -->
+      <div class="wrapper">
+         <div class="pageHeading">
+            <h2>My Projects</h2>
+         </div>
+         <div class="projectButton">
+            <div class="card">
+               <div class="card-body">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                        <button class="active btn p1" data-bs-toggle="tab" data-bs-target="#project1" type="button"
+                           role="tab" aria-selected="true">Project 1</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p2" data-bs-toggle="tab" data-bs-target="#project2" type="button" role="tab"
+                           aria-selected="false">Project 2</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p3" data-bs-toggle="tab" data-bs-target="#project3" type="button" role="tab"
+                           aria-selected="false">Project 3</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p4" data-bs-toggle="tab" data-bs-target="#project4" type="button" role="tab"
+                           aria-selected="false">Project 4</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p5" data-bs-toggle="tab" data-bs-target="#project5" type="button" role="tab"
+                           aria-selected="false">Project 5</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p6" data-bs-toggle="tab" data-bs-target="#project6" type="button" role="tab"
+                           aria-selected="false">Project 6</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="btn p7" data-bs-toggle="tab" data-bs-target="#project7" type="button" role="tab"
+                           aria-selected="false">Project 7</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="projectPreview">
+            <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="home-tab"
+                  tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 1</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 2</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project3" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 3</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project4" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 4</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project5" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 5</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project6" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 6</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="project7" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="topInfo">
+                     <h3>Project 7</h3>
+                  </div>
+                  <div class="userInfo">
+                     <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                           <path fill-rule="evenodd"
+                              d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                        <span>Admin</span>
+                     </h4>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="topItemBox">
+                           <div class="top">
+                              <h3>Your Action Items</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Your Total Action <br> Items</h4>
+                                       <h2>1525</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>More Then 30 Day Late Action <br> Items</h4>
+                                       <h2>158</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottomItemBox">
+                           <div class="top">
+                              <h3>Meeting Dates</h3>
+                           </div>
+                           <div class="itemWrapper">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Team Meeting</h4>
+                                       <h2>15</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Outreach Meetings</h4>
+                                       <h2>07</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                    <div class="singleItem">
+                                       <h4>Xx Meetings</h4>
+                                       <h2>18</h2>
+                                       <div class="detailsBtn">
+                                          <a href="#">
+                                             More Details
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="./asset/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
